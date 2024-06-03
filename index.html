@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grievance Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Grievance Management System</h1>
+    </header>
+    <main>
+        <section id="submit-grievance">
+            <h2>Submit Grievance</h2>
+            <form id="grievance-form">
+                <label for="studentName">Name:</label>
+                <input type="text" id="studentName" name="studentName" required>
+                
+                 <label for="studentContact">Contact:</label>
+                <input type="text" id="studentName" name="studentName" required>
+                
+                 <label for="studentCourse">Course:</label>
+                <input type="text" id="studentName" name="studentName" required>
+                
+                <label for="studentEmail">Email:</label>
+                <input type="email" id="studentEmail" name="studentEmail" required>
+                
+                <label for="grievanceText">Grievance:</label>
+                <textarea id="grievanceText" name="grievanceText" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="grievance-list">
+            <h2>Submitted Grievances</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Grievance</th>
+                    </tr>
+                </thead>
+                <tbody id="grievance-table-body">
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
